@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.heading {
+    font-size: 8rem;
+}
+
+.subheading {
+    font-size: 2rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.button {
+    margin-top: 1em;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    background-color: var(--primary-colour);
+    font-size: 1.1rem;
+}

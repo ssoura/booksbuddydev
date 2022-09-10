@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: max-content;
+    max-width: 80vw;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.cover {
+    max-width: 15em;
+    max-height: 29.5em;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 1.8rem;
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+.author {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    color: #727474;
+}
+
+.newprice {
+    font-size: 1.5rem;
+    margin-right: 0.5em;
+}
+
+.originalprice {
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    color: #727474;
+}
+
+.buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+}
+
+.buttons > a {
+    text-decoration: none;
+}
+
+.primary,
+.secondary {
+    font-size: 1rem;
+    background-color: #fff;
+    border: none;
+    border-top: 1px solid #a8a7a7;
+    width: 50vw;
+    height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary {
+    border-right: 1px solid #a8a7a7;
+    font-weight: 600;
+    color: #2c8373;
+}
+
+.go-to-cart-button {
+    display: flex;
+    justify-content: center;
+}
+
+.go-to-cart-button > svg {
+    margin-top: 0.5;
+    margin-left: 0.5em;
+    transform: scale(1.2);
+}
+
+.add-to-cart-button:hover,
+.go-to-cart-button:hover {
+    background-color: #009e81;
+}
+
+.description {
+    max-width: 60ch;
+    margin-top: 1em;
+}
+
+.readmore {
+    color: #2c8373;
+    cursor: pointer;
+}
+
+@media (min-width: 760px) {
+    .container {
+        margin-top: 4em;
+    }
+
+    .cover {
+        max-width: 20em;
+    }
+
+    .buttons {
+        position: unset;
+        width: unset;
+    }
+
+    .primary,
+    .secondary {
+        font-size: 1rem;
+        border: none;
+        border-radius: 0.5em;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 0.7em;
+        margin-top: 0.7em;
+        cursor: pointer;
+        width: 12em;
+        height: unset;
+    }
+
+    .primary {
+        color: #000;
+        background-color: var(--primary-colour);
+        margin-right: 1em;
+    }
+
+    .secondary {
+        background-color: transparent;
+        border: 1px solid #2c8373;
+        color: #2c8373;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: unset;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        justify-content: space-between;
+    }
+
+    .cover {
+        margin-right: 2em;
+    }
+
+    .name {
+        font-size: 2rem;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+        font-weight: 700;
+    }
+
+    .author {
+        margin-bottom: 2em;
+    }
+}

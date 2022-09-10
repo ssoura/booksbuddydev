@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+    --nav-bg-clr: #EDECF7;
+    --index-1: 1;
+    --index-highest: 2;
+    --card-max-width: 11em;
+    --card-img-height: 15em;
+    --light-border: #f0ebeb;
+    --danger-colour: #ef4444;
+    --primary-colour: #FF8902;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.loading-svg {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-arrow,
+.prev-arrow {
+    transform: scale(1.5);
+}
+
+
+@import url("https://openui.netlify.app/css/components.css");

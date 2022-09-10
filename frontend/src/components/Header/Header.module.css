@@ -1,0 +1,12 @@
+.nav {
+    display : flex;
+    justify-content: space-between;
+    padding-bottom: 0.3em;
+    grid-area: header;
+    padding-left: 0;
+    padding-right: 0;
+    border: 1px solid #e2dede;
+    z-index: var(--index-highest);
+    margin-left: 1em;
+    margin-right: 1em;
+}

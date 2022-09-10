@@ -1,0 +1,53 @@
+.homePage {
+    padding-bottom: 1em;
+}
+
+.homePageBannerContainer {
+    position: relative;
+    height:24vh;
+    width: 100vw;
+}
+
+.homePageBanner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.textOverlayContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(54, 54, 54, 0.75);
+    z-index: var(--index-1);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textOverlayText {
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 80vw;
+    color: #f1f8f8;
+}
+
+.textOverlayButton {
+    font-size: 1.2rem;
+    border-radius: 0.2em;
+    margin-top: 1em;
+    border: 1px solid var(--primary-colour);
+    border: none;
+    padding: 0.5em 1em;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: var(--primary-colour);
+}
+
+.textOverlayButton:hover {
+    background-color: #59d4be;
+}

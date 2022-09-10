@@ -1,0 +1,123 @@
+.card {
+    justify-self: center;
+    text-align: center;
+    width: 11em;
+    color: #000;
+}
+
+.card > a {
+    text-decoration: none;
+}
+
+.cover {
+    height: 13em;
+}
+
+.icon {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    padding: 0.5em;
+    right: 1.5em;
+    margin: auto;
+}
+
+.heartSvg,
+.filledHeartSvg {
+    transform: scale(1.5);
+}
+
+.closeButton {
+    transform: scale(1.5);
+}
+
+.text {
+    text-align: left;
+}
+
+.heading {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.subHeading {
+    font-size: 0.8rem;
+}
+
+.price {
+    font-size: 0.9rem;
+}
+
+.addToCartButton,
+.moveToCartButton,
+.gotoCartButton {
+    width: 100%;
+    border: none;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.7em;
+    margin-top: 0.7em;
+    cursor: pointer;
+    background-color: var(--primary-colour);
+}
+
+.gotoCartButton {
+    display: flex;
+    justify-content: center;
+}
+
+.gotoCartButton > svg {
+    margin-top: 0.5;
+    margin-left: 0.5em;
+    transform: scale(1.2);
+}
+
+.addToCartButton:hover,
+.moveToCartButton:hover,
+.gotoCartButton:hover {
+    background-color: #59d4be;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.noSelect:focus {
+    outline: none !important;
+}
+
+@media (max-width: 350px) {
+    .card {
+        width: 9em;
+    }
+
+    .cover {
+        height: 12em;
+    }
+}
+
+@media (min-width: 411px) {
+    .card {
+        width: 12em;
+    }
+}
+
+@media (min-width: 874px) and (min-height: 500px) {
+    .card {
+        justify-self: unset;
+    }
+}
